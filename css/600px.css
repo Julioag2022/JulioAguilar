@@ -1,35 +1,74 @@
-/* HEADER */
-header .menu{
-    display: none;
-}
-header .name-menu-container i{
-    display: none;
-}
-header .name-menu-container .menu-tablet-desktop{
-    display: flex;
-    justify-content: end;
-}
-header .name-menu-container .menu-tablet-desktop a{
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: var(--gray1);
-    margin-left: 2rem;
-    margin-left: 4rem;
+/* ========== 600px+ (Tablet) ========== */
+
+/* Hide hamburger, show desktop nav */
+header .menu {
+  display: none;
 }
 
-/* ME SECTION*/
-main .section-me{
-    flex-direction: row-reverse;
-    padding-top: 12rem;
+header .nav-container > i {
+  display: none;
 }
-main .section-me .profilePhoto{
-    width: 50%;
-    justify-content: end;
+
+header .nav-container .menu-tablet-desktop {
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
 }
-main .section-me .description-container{
-    width: 50%;
-    padding-top: 2rem;
+
+header .nav-container .menu-tablet-desktop a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  transition: color 0.2s;
 }
-main .section-me .description-container{
-    padding-right: 5%;
+
+header .nav-container .menu-tablet-desktop a:hover {
+  color: var(--accent);
+}
+
+header .nav-container .menu-tablet-desktop .cv-btn {
+  color: var(--accent);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.6rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+header .nav-container .menu-tablet-desktop .cv-btn:hover {
+  background: var(--accent-glow);
+  border-color: var(--accent);
+}
+
+header .nav-container .menu-tablet-desktop .cv-btn i {
+  font-size: 1.1rem;
+  margin-left: 0.4rem;
+}
+
+/* Hero: row layout */
+main .section-me {
+  flex-direction: row-reverse;
+  padding-top: 13rem;
+  align-items: center;
+  gap: 4rem;
+}
+
+main .section-me .profilePhoto {
+  width: 45%;
+  justify-content: center;
+}
+
+main .section-me .description-container {
+  width: 55%;
+  align-items: flex-start;
+  text-align: left;
+}
+
+main .section-me .description-container .hero-actions {
+  justify-content: flex-start;
+}
+
+main .section-me .description-container .specializations {
+  justify-content: flex-start;
 }

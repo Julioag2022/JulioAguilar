@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/c2cb307c91.js"
-      crossorigin="anonymous"
-    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -17,226 +13,258 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/600px.css" media="(min-width: 600px)" />
     <link rel="stylesheet" href="css/775px.css" media="(min-width: 775px)" />
-    <link
-      rel="stylesheet"
-      href="css/1100px.css"
-      media="(min-width: 1100px)"
-    />
-    <title>Julio César Aguilar</title>
+    <link rel="stylesheet" href="css/1100px.css" media="(min-width: 1100px)" />
+    <title>Julio César Aguilar — Developer</title>
   </head>
   <body>
     <header>
-      <div class="name-menu-container">
-        <a href="https://drive.google.com/file/d/1NxLgcb8xXHPhc16Y2Ebs2Xl3NMIxLhNQ/view?usp=drive_link"><p class="name">CV</p></a>
+      <div class="nav-container">
+        <a href="#me" class="logo"><i class="fa-solid fa-code"></i></a>
         <i class="fa-solid fa-bars-staggered" id="menu-icon"></i>
-        <div class="menu-tablet-desktop">
-          <a href="#me">Me</a>
+        <nav class="menu-tablet-desktop">
+          <a href="#me">Sobre mí</a>
           <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#social-media">Social Media</a>
-        </div>
+          <a href="#projects">Proyectos</a>
+          <a href="#social-media">Contacto</a>
+          <a
+            href="https://drive.google.com/file/d/13KaYADHms1eEHSArABfCFnNmHOery1jB/view?usp=sharing"
+            class="cv-btn"
+            target="_blank"
+          >CV <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </nav>
       </div>
       <div class="menu display-menu" id="menu">
         <div class="menu-container">
-          <a href="#me" id="item1">Me</a>
+          <a href="#me" id="item1">Sobre mí</a>
           <a href="#skills" id="item2">Skills</a>
-          <a href="#projects" id="item3">Projects</a>
-          <a href="#social-media" id="item4">Social Media</a>
+          <a href="#projects" id="item3">Proyectos</a>
+          <a href="#social-media" id="item4">Contacto</a>
         </div>
       </div>
     </header>
+
     <main>
+      <!-- HERO -->
       <section class="section-me" id="me">
         <div class="profilePhoto">
           <div class="profilePhoto-container">
-            <img src="imgs/perfil.jpg" />
+            <img src="imgs/perfil.jpg" alt="Julio Aguilar" />
           </div>
         </div>
         <div class="description-container">
-          <p>Hola, mi nombre es</p>
-          <h1>Julio</h1>
-          <p>
-            Soy de Guatemala, soy desarrollador web, tengo conocimientos en los
-            siguientes lenguajes y tecnologías, HTML, CSS, TailwindCSS,
-            Javascript, Typescript, NPM, Angular, NodeJS, GIT, MySQL y C#.
-          </p>
+          <span class="greeting">Hola, soy</span>
+          <h1>Julio <span class="accent-text">Aguilar</span></h1>
+          <p class="role">Desarrollador de Software Profesional</p>
+          <div class="specializations">
+            <span class="spec-tag">Aplicaciones Web</span>
+            <span class="spec-tag">Apps de Escritorio</span>
+            <span class="spec-tag">Sistemas CRM</span>
+            <span class="spec-tag">APIs REST</span>
+          </div>
+          <p class="bio">Desde Guatemala para el mundo.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">Ver proyectos</a>
+            <a href="#social-media" class="btn-secondary">Contacto</a>
+          </div>
         </div>
       </section>
+
+      <!-- SKILLS -->
       <section class="section-skills" id="skills">
-        <p class="skills-tittle">SKILLS</p>
+        <h2 class="section-title">SKILLS</h2>
         <div class="skills-container">
           <div class="skills-img-container">
-            <img
-              src="https://img.icons8.com/color/480/html-5--v1.png"
-              alt="html-5--v1"
-            />
+            <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="HTML5" />
+            <span>HTML5</span>
           </div>
           <div class="skills-img-container">
-            <img src="https://img.icons8.com/color/480/css3.png" alt="css3" />
+            <img src="https://img.icons8.com/color/96/css3.png" alt="CSS3" />
+            <span>CSS3</span>
           </div>
           <div class="skills-img-container">
-            <img
-              src="https://img.icons8.com/color/480/javascript--v1.png"
-              alt="javascript--v1"
-            />
+            <img src="https://img.icons8.com/color/96/javascript--v1.png" alt="JavaScript" />
+            <span>JavaScript</span>
           </div>
           <div class="skills-img-container">
-            <img
-              src="https://img.icons8.com/color/480/angularjs.png"
-              alt="angularjs"
-            />
+            <img src="https://img.icons8.com/color/96/typescript.png" alt="TypeScript" />
+            <span>TypeScript</span>
           </div>
           <div class="skills-img-container">
-            <img
-              src="https://img.icons8.com/fluency/240/node-js.png"
-              alt="node-js"
-            />
+            <img src="https://img.icons8.com/color/96/angularjs.png" alt="Angular" />
+            <span>Angular</span>
           </div>
           <div class="skills-img-container">
-            <img src="https://img.icons8.com/color/480/git.png" alt="git" />
+            <img src="https://img.icons8.com/fluency/96/node-js.png" alt="Node.js" />
+            <span>Node.js</span>
+          </div>
+          <div class="skills-img-container">
+            <img src="https://img.icons8.com/color/96/tailwind_css.png" alt="Tailwind" />
+            <span>Tailwind</span>
+          </div>
+          <div class="skills-img-container">
+            <img src="https://img.icons8.com/color/96/git.png" alt="Git" />
+            <span>Git</span>
+          </div>
+          <div class="skills-img-container">
+            <img src="https://img.icons8.com/color/96/mysql-logo.png" alt="MySQL" />
+            <span>MySQL</span>
           </div>
         </div>
         <a id="projects"></a>
       </section>
+
+      <!-- PROJECTS -->
       <section class="section-projects">
-        <p class="projects-tittle">PROJECTS</p>
+        <h2 class="section-title">PROYECTOS</h2>
         <div class="projects-container">
+
+          <!-- Gnomo Accounting App -->
           <a
             class="project"
-            href="https://julioag2022.github.io/BBR/"
+            href="https://gnomo-contability.vercel.app/"
             target="_blank"
           >
             <div class="img-container">
-              <img src="imgs/BBR.png" alt="image" />
+              <img src="imgs/gnomo.png" alt="Sistema de Contabilidad Gnomo" />
             </div>
-            <p>Page BBR Javascript - CSS - HTML Apis </p>
+            <div class="project-info">
+              <h3>Sistema de Contabilidad — Gnomo</h3>
+              <div class="project-tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">TailwindCSS</span>
+                <span class="tag">TypeScript</span>
+              </div>
+            </div>
           </a>
+
+          <!-- Barberena Bike Race XCM -->
+          <a
+            class="project"
+            href="https://julioag2022.github.io/Barberena-Bike-Race-XCM/"
+            target="_blank"
+          >
+            <div class="img-container">
+              <img src="imgs/BBR.png" alt="Barberena Bike Race XCM" />
+            </div>
+            <div class="project-info">
+              <h3>Barberena Bike Race XCM</h3>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">CSS</span>
+                <span class="tag">HTML</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- To-do App -->
           <a
             class="project"
             href="https://mydayapp-ab896.web.app/"
             target="_blank"
           >
             <div class="img-container">
-              <img src="imgs/todoapp-angular.png" alt="image" />
+              <img src="imgs/todoapp-angular.png" alt="To-do App Angular" />
             </div>
-            <p>To do app - Angular</p>
+            <div class="project-info">
+              <h3>To-do App</h3>
+              <div class="project-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">TypeScript</span>
+              </div>
+            </div>
           </a>
+
+          <!-- Gallery Dog -->
           <a
             class="project"
             href="https://julioag2022.github.io/Gallery-Dog/"
             target="_blank"
           >
             <div class="img-container">
-              <img src="imgs/Gallery Dog.png" alt="image" />
+              <img src="imgs/Gallery Dog.png" alt="Gallery Dog" />
             </div>
-            <p>Gallery Dog Javascript - Apis - Fetch APi</p>
+            <div class="project-info">
+              <h3>Gallery Dog</h3>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Fetch API</span>
+              </div>
+            </div>
           </a>
+
+          <!-- Calculator App -->
           <a
             class="project"
             href="https://julioag2022.github.io/Calculator-JS-/"
             target="_blank"
           >
             <div class="img-container">
-              <img
-                src="imgs/calculator-app-main-JS.png"
-                alt="image"
-              />
+              <img src="imgs/calculator-app-main-JS.png" alt="Calculator App" />
             </div>
-            <p>Calculator app main JS</p>
-          </a>
-          <a
-            class="project"
-            href=""
-            target="_blank"
-          >
-            <div class="img-container">
+            <div class="project-info">
+              <h3>Calculator App</h3>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">CSS</span>
+              </div>
             </div>
-           
-          </a>
-          <a
-            class="project"
-            href="https://frederic-morales.github.io/Newsletter-sign-up-form-with-success-message/"
-            target="_blank"
-          >
-            
-            </div>
-           
           </a>
 
-          <!--<a
-            class="project"
-            href="https://frederic-morales.github.io/Order-sumary-component-Responsive/"
-          >
-            <div class="img-container">
-              <img
-                src="./assets/IMGS/Order Summary Component Responsive.png"
-                alt="image"
-              />
-            </div>
-            <p>Order summary component responsive</p>
-          </a>
-          <a
-            class="project"
-            href="https://frederic-morales.github.io/Product-preview-card-component-responsive-design/"
-          >
-            <div class="img-container">
-              <img
-                src="./assets/IMGS/product-preview-card-component.png"
-                alt="image"
-              />
-            </div>
-            <p>Product preview card component</p>
-          </a>
-          <a
-            class="project"
-            href="https://frederic-morales.github.io/blog-noticias-TailwindCSS/"
-            target="_blank"
-          >
-            <div class="img-container">
-              <img
-                src="./assets/IMGS/Blog-Noticias-TailwindCSS.png"
-                alt="image"
-              />
-            </div>
-            <p>Blog Noticias - Tailwind CSS</p>
-          </a>-->
         </div>
       </section>
     </main>
+
     <footer id="social-media">
       <div class="social-contact-container">
-        <div class="social-media">
-          <div class="media-img-container">
-            <a href="https://github.com/Julioag2022" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
+
+        <div class="footer-top">
+          <p class="footer-title">Trabajemos juntos</p>
+          <p class="footer-sub">Disponible para proyectos freelance y oportunidades laborales</p>
+        </div>
+
+        <div class="footer-body">
+          <div class="footer-col">
+            <p class="footer-col-label">Redes sociales</p>
+            <div class="social-media">
+              <div class="media-img-container">
+                <a href="https://github.com/Julioag2022" target="_blank" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <div class="media-img-container">
+                <a href="https://www.linkedin.com/in/julioaguilar01/" target="_blank" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+              <div class="media-img-container">
+                <a href="https://www.instagram.com/julio_ag16/" target="_blank" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="media-img-container">
-            <a href="https://www.instagram.com/julio_ag16/" target="_blank">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-          <div class="media-img-container">
-            <a
-              href="https://www.linkedin.com/in/julioaguilar01/"
-              target="_blank"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-          <div class="media-img-container">
-          
+
+          <div class="footer-divider"></div>
+
+          <div class="footer-col">
+            <p class="footer-col-label">Contacto directo</p>
+            <div class="contact">
+              <a href="https://wa.me/50255217409" target="_blank" class="contact-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>+502 5521-7409</span>
+              </a>
+              <a href="mailto:julioag2022@gmail.com" class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>julioag2022@gmail.com</span>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="contact">
-          <h4>Tel</h4>
-          <p>+ 502 5521-7409</p>
-          <h4>Email</h4>
-          <p>julioag2022@gmail.com</p>
-          
-        </div>
+
+        <p class="copyright">© 2025 Julio César Aguilar · Guatemala</p>
       </div>
     </footer>
+
     <script src="code.js"></script>
   </body>
 </html>
