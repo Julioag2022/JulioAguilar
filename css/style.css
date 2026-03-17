@@ -772,14 +772,14 @@ footer .social-media {
   color: var(--accent);
 }
 
-/* Contact items */
+/* Contact links */
 footer .contact {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 1.2rem;
 }
 
-.contact-item {
+.contact-link {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -787,29 +787,23 @@ footer .contact {
   color: var(--text-secondary);
   font-family: "Inter", sans-serif;
   font-size: 1.35rem;
-  padding: 0.9rem 1.6rem;
-  border-radius: 0.8rem;
-  border: 1px solid var(--border);
-  background: var(--bg-card);
-  transition: border-color 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+  transition: color 0.2s;
 }
 
-.contact-item:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  box-shadow: 0 4px 14px var(--accent-glow);
-  transform: translateY(-2px);
+.contact-link:hover {
+  color: var(--text-primary);
 }
 
-.contact-item i {
-  font-size: 1.6rem;
-  color: var(--accent);
-  width: 1.8rem;
+.contact-icon {
+  font-size: 1.7rem;
+  width: 2rem;
   text-align: center;
+  color: var(--accent);
+  flex-shrink: 0;
 }
 
-.contact-item:nth-child(1) i {
-  color: #25d366; /* WhatsApp green */
+.contact-icon.whatsapp {
+  color: #25d366;
 }
 
 .copyright {
